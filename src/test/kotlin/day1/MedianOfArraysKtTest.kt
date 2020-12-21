@@ -1,6 +1,5 @@
 package day1
 
-import findMedianSortedArrays
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 

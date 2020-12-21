@@ -1,3 +1,5 @@
+package day1
+
 fun findMedianSortedArrays(nums1: IntArray, nums2: IntArray): Double {
     val allElements = mutableListOf<Int>()
     allElements.addAll(nums1.toList())
