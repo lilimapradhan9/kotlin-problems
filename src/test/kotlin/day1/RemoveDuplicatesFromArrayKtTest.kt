@@ -18,4 +18,11 @@ class RemoveDuplicatesFromArrayKtTest {
 
         Assertions.assertEquals(5, arrayLength)
     }
+
+    @Test
+    fun `remove duplicates from empty array`() {
+        val arrayLength = removeDuplicates(intArrayOf())
+
+        Assertions.assertEquals(0, arrayLength)
+    }
 }

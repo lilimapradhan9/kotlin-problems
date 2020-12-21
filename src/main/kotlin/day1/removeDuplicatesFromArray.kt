@@ -1,6 +1,18 @@
 package day1
 
 fun removeDuplicates(nums: IntArray): Int {
-    val arrayWithoutDuplicates = nums.toSet()
-    return arrayWithoutDuplicates.size
+    if (nums.isEmpty()) return 0
+
+    var index = 1
+    var curVal = nums[0]
+
+    for (i in nums.indices) {
+        if (nums[i] != curVal) {
+            curVal = nums[i]
+            nums[index] = nums[i]
+            index++
+        }
+    }
+
+    return index
 }
