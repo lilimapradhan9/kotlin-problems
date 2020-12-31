@@ -3,6 +3,7 @@ package day6
 import models.ListNode
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
+import util.nthNodeValue
 
 class MergeTwoListsKtTest {
     @Test
@@ -43,11 +44,5 @@ class MergeTwoListsKtTest {
         val output = mergeTwoLists(firstList, secondList)
 
         Assertions.assertEquals(0, output?.`val`)
-    }
-
-    private fun nthNodeValue(output: ListNode?, n: Int): Int? {
-        var node = output
-        for (i in 0 until n) node = node?.next
-        return node?.`val`
     }
 }
