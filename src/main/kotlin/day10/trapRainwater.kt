@@ -1,6 +1,7 @@
 package day10
 
 fun trap(height: IntArray): Int {
+    if(height.isEmpty()) return 0
     var result = 0
     val size = height.size
     val leftMax = IntArray(size)
