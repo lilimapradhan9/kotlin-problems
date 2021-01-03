@@ -17,4 +17,11 @@ class TrapRainwaterKtTest {
 
         Assertions.assertEquals(9, trap)
     }
+
+    @Test
+    fun `return trap units for empty array`() {
+        val trap = trap(intArrayOf())
+
+        Assertions.assertEquals(0, trap)
+    }
 }
