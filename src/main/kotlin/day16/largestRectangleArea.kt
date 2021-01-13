@@ -8,10 +8,7 @@ fun largestRectangleArea(h: IntArray): Int {
     val s = Stack<Int>()
     while (iter < h.size) {
         while (!s.isEmpty() && h[iter] < h[s.peek()]) {
-            println("$iter  ${s.peek()}")
             largestArea = Math.max(largestArea, h[s.pop()] * (iter - if (s.isEmpty()) 0 else s.peek() + 1))
-            println("$largestArea")
-
         }
         s.push(iter++)
     }

@@ -22,7 +22,7 @@ class UniquePathsKtTest {
     fun `return number of unique paths for 7,3`() {
         val uniquePaths = uniquePaths(7, 3)
 
-        Assertions.assertEquals(21, uniquePaths)
+        Assertions.assertEquals(28, uniquePaths)
     }
 
     @Test
