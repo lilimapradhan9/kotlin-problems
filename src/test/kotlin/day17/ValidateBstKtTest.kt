@@ -4,7 +4,7 @@ import models.TreeNode
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
-internal class ValidateBstKtTest {
+class ValidateBstKtTest {
     @Test
     fun `should return rhe inorder solution for 2,1,3`() {
         val root = TreeNode(2)
