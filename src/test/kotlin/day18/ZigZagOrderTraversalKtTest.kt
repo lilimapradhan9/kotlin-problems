@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test
 
 class ZigZagOrderTraversalKtTest {
     @Test
-    fun `should return the level order solution for 3,9,20,null,null,15,7`() {
+    fun `should return the zigzag order solution for 3,9,20,null,null,15,7`() {
         val root = TreeNode(3)
         root.left = TreeNode(9)
         root.right = TreeNode(20)

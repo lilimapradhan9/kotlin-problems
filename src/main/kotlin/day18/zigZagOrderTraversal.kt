@@ -22,7 +22,6 @@ fun zigzagLevelOrder(root: TreeNode?): List<List<Int>> {
                 nodeList.add(node.`val`)
             }
 
-            println("***********$i ${nodeList}")
             node.left?.let { queue.offer(it) }
             node.right?.let { queue.offer(it) }
         }
