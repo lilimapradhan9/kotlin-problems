@@ -54,4 +54,24 @@ class IntersectionOfLinkedListsKtTest {
 
         Assertions.assertEquals(null, intersectionNode)
     }
+
+    @Test
+    fun `return the intersection for 4,1,8,4,5 and 5,6,1,8,4,5 using length solution`() {
+        val list1 = ListNode(4)
+        list1.next = ListNode(1)
+        val commonNode = ListNode(8)
+        list1.next?.next = commonNode
+        list1.next?.next?.next = ListNode(4)
+        list1.next?.next?.next?.next = ListNode(5)
+        val list2 = ListNode(5)
+        list2.next = ListNode(6)
+        list2.next?.next = ListNode(1)
+        list2.next?.next?.next = commonNode
+        list2.next?.next?.next?.next = ListNode(4)
+        list2.next?.next?.next?.next?.next = ListNode(5)
+
+        val intersectionNode = getIntersectionNodeUsingLength(list1, list2)
+
+        Assertions.assertEquals(8, intersectionNode?.`val`)
+    }
 }
