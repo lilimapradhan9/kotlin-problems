@@ -1,6 +1,6 @@
 package util
 
-import models.ListNode
+import dayFolders.models.ListNode
 
 fun nthNodeValue(output: ListNode?, n: Int): Int? {
     var node = output
